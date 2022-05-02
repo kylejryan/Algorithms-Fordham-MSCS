@@ -44,10 +44,10 @@ def closedFormFib(n):
     except:
         return("Sorry, Not a Valid Input!")
 
-
-print(recursiveFib(100))
-print(iterativeFib(0))
-print(closedFormFib(0))
+# Returns the nth Fibonacci Number
+print(recursiveFib(21))
+print(iterativeFib(21))
+print(closedFormFib(21))
 
 # Test Cases
 # Invalid Inputs

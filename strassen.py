@@ -1,3 +1,7 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import numpy as np
 
 # Splitting our Matrix into Quarters
@@ -7,7 +11,11 @@ def split(m):
     row2, col2 = row//2, col//2
     return(m[:row2, :col2], m[:row2, col2:], m[row2:, :col2], m[row2:, col2:])
 
+# Strassen's Matrix Multiplication Algorithm
+# Note: The Algorithm Multiplies Two Matricies of Order n, where n is a Power of 2 ex. [2, 4, 8, 16, ...]
+# Additional Modifications Would Need to be Made to Pad the Matrix to Block Matrix Identity
 def strassen(x, y):
+
     # 1x1 is Our Base Case, We can Just Multiply the Two Numbers
     if len(x) == 1:
         return(x * y)
@@ -49,8 +57,18 @@ print(str(array1) + '\n' + str(array2))
 print('\n' + 'Output: ')
 print(strassen(array1, array2))
 
+'''
 array1 = np.random.randint(1, 10,size=(256,256))
 array2 = np.random.randint(1, 10,size=(256,256))
+print('\n' + 'Input : ')
+print(str(array1) + '\n' + str(array2))
+print('\n' + 'Output: ')
+print(strassen(array1, array2))
+'''
+
+# Another Method for Constructing a Matrix
+array1 = np.matrix([[ 1, 2, 3, 4],[ 4, 5, 6, 7], [5, 6, 7, 8], [3, 2, 1, 4]])
+array2 = np.matrix([[ 1, 2, 3, 4],[ 4, 5, 6, 7], [5, 6, 7, 8], [3, 2, 1, 4]])
 print('\n' + 'Input : ')
 print(str(array1) + '\n' + str(array2))
 print('\n' + 'Output: ')

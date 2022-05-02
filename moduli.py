@@ -1,11 +1,17 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import math
 
+# Generic Modular Exponeniation Function
 def modexp(x, y, N):
     if y == 0:
         return 1
     z = modexp(x, math.floor(y//2), N)
     return ((z**2)%N) if y % 2 == 0 else (x*(z**2)%N)
 
+# Modular Exponentiation Calculator
 def modexpcalc(base1, exp1, base2, exp2, mod):
     return((modexp(base1, exp1, mod)) - (modexp(base2, exp2, mod)))
 

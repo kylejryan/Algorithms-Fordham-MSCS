@@ -1,3 +1,7 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import sys
 
 # Function to Find Max Sub Array Sum

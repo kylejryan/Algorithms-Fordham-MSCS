@@ -1,3 +1,7 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 from collections import defaultdict
 
 time = 1
@@ -9,6 +13,7 @@ class Graph:
     def addEdge(self, u, v):
         self.graph[u].append(v)
 
+    # DFS Util Returns Arrival & Departure Times and What Type of Edge the Node is
     def DFSUtil(self, v, visited, list, arrival, departure):
         
         global time
@@ -32,7 +37,8 @@ class Graph:
         print(v, arrival[nodeNum], departure[nodeNum])
         
     def DFS(self, v):
-
+        
+        # Initializing Size of Lists and Sets
         numNodes = 9
         visited = set()
         dfsList = []

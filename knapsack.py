@@ -1,4 +1,8 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
 
+# Generic Knapsack Problem with Weights, Values, maxWeight, etc
 def testKnapsack(W, wt, val, n):
   
     # Base Case

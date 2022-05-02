@@ -1,10 +1,14 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import random
 
-list = []
-def randomList(start, finish, number):
+randomList = []
+def randomListGenerator(start, finish, number):
     for _ in range(number):
-        list.append(random.randint(start, finish))
-    return list
+        randomList.append(random.randint(start, finish))
+    return randomList
 
 def mergeSort(arr):
     # Exit if Arr Can't be Sorted
@@ -47,7 +51,7 @@ def mergeSort(arr):
         j += 1
         k += 1
 
-randomList(1, 25, 10)
-print(f'Unsorted List: {str(list)}')
-mergeSort(list)
-print(f'Sorted List: {str(list)}')
+randomListGenerator(1, 25, 10)
+print(f'Unsorted List: {str(randomList)}')
+mergeSort(randomList)
+print(f'Sorted List: {str(randomList)}')

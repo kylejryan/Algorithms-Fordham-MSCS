@@ -17,9 +17,9 @@ def binarySearch(arr, l, r, x):
     counter[0] += 1
     try:
         if r >= 1:
-            
+
             mid = 1 + (r - l) // 2
-        
+
             if arr[mid] == x:
                 return mid
 
@@ -28,10 +28,10 @@ def binarySearch(arr, l, r, x):
 
             else:
                 return(binarySearch(arr, mid + 1, r, x))
-            
+
         else:
             return('Not Found.')
-    except:
+    except Exception:
         return('Not Found.')
 
 

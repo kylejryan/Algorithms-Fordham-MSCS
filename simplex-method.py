@@ -1,6 +1,12 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import math
 import numpy as np
 
+# Simplex Method Solver, Operations Research Problem
+# Returns Values of x, y, z and Max Profit
 def simplex(c, A, b):  
 
     # Converting the Equation Form to Tableau

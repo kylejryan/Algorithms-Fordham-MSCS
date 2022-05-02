@@ -1,5 +1,10 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import math
 
+# Simple Function to Perform Remainder Division
 def divide(x, y):
     if x == 0:
         return(0,0)

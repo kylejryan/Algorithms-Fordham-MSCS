@@ -1,3 +1,6 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
 
 class Graph:
  
@@ -23,9 +26,11 @@ class Graph:
             shortestPath[nodeName] = nodeDist
             print("{0}\t\t{1}".format(nodeName, nodeDist))
 
+        # Sorting Shortest Path (Weights/Distance Between Nodes)
         sorted_tuples = sorted(shortestPath.items(), key=lambda item: item[1])
         sorted_dict = dict(sorted_tuples)
 
+        # Returning Keys
         sortedKeys = list(sorted_dict.keys())
         print(f'BFS: {sortedKeys}')
 

@@ -1,3 +1,7 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import numpy as np
 
 # Splitting our Matrix into Quarters
@@ -50,8 +54,18 @@ print(str(array1) + '\n' + str(array2))
 print('\n' + 'Output: ')
 print(matrixMultiply(array1, array2))
 
+'''
 array1 = np.random.randint(1, 10,size=(256,256))
 array2 = np.random.randint(1, 10,size=(256,256))
+print('\n' + 'Input : ')
+print(str(array1) + '\n' + str(array2))
+print('\n' + 'Output: ')
+print(matrixMultiply(array1, array2))
+'''
+
+# Another Method for Constructing a Matrix
+array1 = np.matrix([[ 1, 2, 3],[ 4, 5, 6], [5, 6, 7]])
+array2 = np.matrix([[ 1, 2, 3],[ 4, 5, 6], [5, 6, 7]])
 print('\n' + 'Input : ')
 print(str(array1) + '\n' + str(array2))
 print('\n' + 'Output: ')

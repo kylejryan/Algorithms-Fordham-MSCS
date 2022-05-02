@@ -1,3 +1,6 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
 
 # Function Intakes Coins Denomination and Target Amount
 def coinChange(coins, amount):

@@ -1,3 +1,7 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import numpy as np
 
 def gauss_method(a, b):
@@ -23,7 +27,7 @@ def gauss_method(a, b):
     # Returning b
     return b
 
-
+# Given Systems of Linear Equations for Assignment
 a = np.array([[9, 12, 10, 8, 6],
               [11, 3, 13, 7, 5],
               [14, 15, 16, 17, 18],
@@ -33,4 +37,5 @@ a = np.array([[9, 12, 10, 8, 6],
 
 b = np.array([16, -60, 29, 20, 47], dtype = float)
 
+# Expected [2, 5, -10, 4, 1]
 print(gauss_method(a, b))

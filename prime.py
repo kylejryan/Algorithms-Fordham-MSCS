@@ -1,13 +1,18 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import math
 import random
 
+# Generic Modular Exponentiation Function
 def modexp(x, y, N):
     if y == 0:
         return 1
     z = modexp(x, math.floor(y//2), N)
     return ((z**2)%N) if y % 2 == 0 else (x*(z**2)%N)
     
-
+# Function to Check if a Number is Prime, Included Features for Low Error Probability
 def isPrime(N):
     if N in [1, 4]:
         return False

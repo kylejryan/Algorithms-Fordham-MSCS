@@ -1,5 +1,8 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 from collections import defaultdict
-from re import S
 
 time = 1
 class Graph:
@@ -12,14 +15,18 @@ class Graph:
     
     def BFS(self, v):
      
+        # Initializing Queue and Visited Array
         queue = [v]
         visited = [v]
 
+        # Initializing Arrival and Departure of Each Node
         numNodes = 9
         arrival = [0 for _ in range(numNodes + 1)]
         departure = [0 for _ in range(numNodes + 1)]
 
         global time
+        
+        # Converting NodeNum from String to Int to Easily Traverse
         nodeNum = int(ord(v) - 64)
 
         while queue:
