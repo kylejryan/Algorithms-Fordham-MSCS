@@ -1,6 +1,9 @@
+# Kyle Ryan
+# CISC 5825 Computer Algorithms
+# Professor Josephine Altzman
+
 import random
 
-# NOT WORKING!!
 # Random List Generator and Sorter
 list = []
 def randomList(start, finish, number):
@@ -11,14 +14,13 @@ def randomList(start, finish, number):
 
 
 # Binary Search
-
 counter = [0]
 def binarySearch(arr, l, r, x):
     counter[0] += 1
     try:
         if r >= 1:
 
-            mid = 1 + (r - l) // 2
+            mid = l + (r - l) // 2
 
             if arr[mid] == x:
                 return mid
@@ -32,13 +34,13 @@ def binarySearch(arr, l, r, x):
         else:
             return('Not Found.')
     except Exception:
-        return('Not Found.')
+        return('Max Recursion, Not Found.')
 
 
 x = 5
-
 randomList(0, 10, 10)
+# Printing List
 print(list)
 
-print(binarySearch(list, 0, len(list)-1, x))
-print(counter[0])
+print(f'The Element is Found at Index: {str(binarySearch(list, 0, len(list)-1, x))}')
+print(f'It Took This Many Iterations to Find the Element: {str(counter[0])}')
